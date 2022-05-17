@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Lewis Webiste</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="main.html"><img src="image/logo_.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#project-scroll">PROJECT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Lewis Lee</h1>
+            <p>Welcome<br>Proficient programmer who graduated from SDSU</p>
+            <a href="" class="contact_home">Contact me to know more</a>
+        </div>
+
+    </section>
+<!--------profile------->
+
+    <section class="profile">
+        <h1 id="profile">About Me</h1>
+
+        <div class="row">
+            <div class="profile-col">
+                <img src="image/profile.jpg">
+                <p>Hi! My name is Lewis. I was born in Hong Kong. I started to live in the United States 7 years ago as an international student.<br></p>
+                <p><br></p>
+                <p>Graduated from San Diego State University(SDSU) B.S. Computer Science in 2021.</p>
+                <p><br></p>
+                <p>Quadlingual, Fluent in Cantonese, Mandarin, English, and Japanese.</p>
+            </div>
+        </div>
+    </section>
+
+<!------project------>>
+    <section class="project">
+        <h1 id="project-scroll">Project</h1>
+
+        <div class="row">
+            <div class="project-col">
+                <img src="image/3cards.png">
+                <div class="layer">
+                    <h2>3 Cards Game</h2>
+                    <h3>Designed singer player card game by performing skill of object-oriented programming skill with C++</h3>
+                    <ul class="project_des">
+                        <li>Developed the program by using various types of data types, e.g., vector, enum, array and class<br></li>
+                        <li>Provided an interface to the player to start a card game with computer opponent<br></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="image/forecast.png">
+                <h2>Andriod Weather Forecast App</h2>
+                <h3>Designed layout of the app and built a working weather forecast app with a class group project by using SDK with Java</h3>
+                <ul class="project_des">
+                    <li>Provided weather forecast information through external API using a clean and well-organized UI<br></li>
+                    <li>Designed a user friendly and easy-to-use app interface<br></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!------JavaScript for Toggle Menu------>>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
